@@ -1,1 +1,353 @@
 @charset "utf-8";
+
+/* general */
+
+.wrapper {
+  background-color: #f2f6f7;
+  padding: 32px 0;
+  width: 100%;
+}
+
+.inner {
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 48px 64px;
+  width: 640px;
+  box-sizing: border-box;
+  border-radius: 3px;
+  box-shadow: 0 0 8px #d9d9d9;
+}
+
+input, 
+textarea,
+select {
+	-webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  border: 1px solid #d9d9d9;
+  border-radius: 3px;
+  background-color: #fbfbfb;
+  color: #545658;
+  padding: 5px;
+  margin-top: 5px;
+  box-sizing: border-box;
+  height: 36px;
+}
+
+textarea {
+  resize: none;
+  height: 100px;
+}
+
+input:focus,
+textarea:focus {
+  background-color: #fff;
+  border-color: rgba(59, 133, 133, .4);
+  box-shadow: 0 0 0 2px rgba(1, 191, 189, .1);
+}
+
+.is-marginTop {
+  margin-top: 20px;
+}
+
+.is-fullWidth {
+  width: 100%;
+}
+
+.linkColor {
+  color: #01a6a4;
+}
+
+.labelText {
+  font-size: 12px;
+  color: #545658;
+}
+
+.markColor {
+  color: #dd4b39;
+}
+
+/* top */
+
+.top__title {
+  text-align: center;
+  color: #545658;
+  font-size: 24px;
+}
+
+.top__socialButton {
+  display: flex;
+  text-align: center;
+  margin-top: 24px;
+}
+
+.flex-half {
+  display: inline-block;
+  width: 50%;
+}
+
+.button {
+  box-sizing: border-box;
+  text-align: center;
+  padding: 13px;
+  font-size: 13px;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: .3s;
+}
+
+.facebook {
+  background-color: #3b5999;
+  border: 1px solid #3b5999;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.facebook:hover {
+  background-color: #344e87;
+}
+
+.google {  
+  border: 1px solid #d9d9d9;
+  color: #dd4b39;
+  margin-left: 8px;
+  transition: 0.3s; 
+}
+
+.google:hover {
+  background-color: #f7f7f7;
+}
+
+.top__message {
+  color: #949697;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 8px;
+}
+
+/* form */
+.form {
+  font-size: 12px;
+  color: #545658;
+}
+.form__contentsDevide{
+  position: relative;
+  text-align: center;
+}
+
+.form__contentsDevide::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 1px;
+  background-color: #ececec;
+}
+
+.form__contentsDevide__text {
+  display: inline-block;
+  color: #949697;
+  font-size: 12px;
+  position: relative;
+  background-color: #fff;
+  padding: 0 10px;
+}
+/* form__name */
+
+.form__name {
+  display: flex;
+}
+
+.form__name__box {
+  display: inline-block;
+  width: 50%;
+}
+
+.form__name__box {
+  margin-left: 16px;
+}
+
+.form__name__box:first-child {
+  margin-left: 0;
+}
+
+.form__name__box input {
+  box-sizing: border-box;
+}
+
+/* form__gender */
+.form__gender__content {
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.form__gender__content:first-child {
+  margin-left: 0;
+}
+
+.form__gender input[type=radio] {
+  display: none;
+}
+
+.form__gender__select {
+  margin-top: 5px;
+  display: flex;
+}
+
+.form__gender__select span {
+  position: relative;
+  display: inline-block;
+  padding: 3px 3px 3px 20px;
+}
+/* ラジオボタンの外枠 */
+.form__gender__select span::before {
+  content: '';
+  display: block;
+  height: 13px;
+  width: 13px;
+  border: 1px solid #d9d9d9;
+  border-radius: 50px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+}
+/* ラジオボタンにチェックが入った時の装飾 */
+.form__gender__select input:checked +
+span::after {
+  content: '';
+  display: block;
+  height: 6px;
+  width: 6px;
+  border: 1px solid #01bfbd;
+  background-color: #01bfbd;
+  border-radius: 50px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 3.5px;
+}
+
+/* form__ragion */
+
+.form__region {
+  width: 50%;
+}
+
+.form__region__area {
+  position: relative;
+}
+
+.form__region__area::after {
+  content: '';
+  display: inline-block;
+  height: 5px;
+  width: 5px; 
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  border-right: 2px solid #d9d9d9;
+  border-bottom: 2px solid #d9d9d9;
+  transform: rotate(45deg);
+}
+
+/* form__email */
+.form__email input::placeholder {
+  color: #949697;
+}
+
+/* form__phone */
+.form__phone input::placeholder {
+  color: #949697;
+}
+
+/* form__courses */
+
+.form__courses__option input {
+  display: none;
+}
+
+.form__courses__option {
+  position: relative;
+  margin-top: 10px;
+  padding-left: 25px;
+}
+
+.form__courses label {
+  color:#545658;
+  cursor: default;
+}
+
+.form__courses__option:first-child {
+  margin-top: 5px;
+}
+
+.form__courses__option label::before {
+  content:'';
+  height: 15px;
+  width: 15px;
+  border: 1px solid #d9d9d9;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.form__courses__option input:checked + 
+.form__courses__label::after {
+  content:'';
+  height: 7px;
+  width: 17px;
+  border-left: 3px solid #01bfbd;
+  border-bottom: 3px solid #01bfbd;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotate(-45deg);
+}
+
+/* textarea */
+
+.form__notes textarea::placeholder {
+  color: #949697;
+}
+
+/* form__button */
+
+.sendButton {
+  color: #fff;
+  background-color: #01bfbd;
+  border: 1px solid #01bfbd;
+  margin-top: 0;
+}
+
+.sendButton:hover {
+  background-color: #01a6a4;
+}
+
+.sendButton:active {
+  color: #01bfbd;
+  background-color: #fff;
+  border-color:#d9d9d9;
+  line-height: 0;
+}
+
+/* form__message */
+
+.form__message {
+  font-size: 12px;
+}
+
+/* foot */
+.foot {
+  text-align: center;
+  font-size: 12px;
+  margin-top: 40px;
+}
+
+.foot p:last-child {
+  display: inline-block;
+  margin-top: 10px;
+}
+

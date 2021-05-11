@@ -10,6 +10,91 @@
     <link rel="stylesheet" href="./assets/css/style.css">
   </head>
   <body>
-
+    <div class="wrapper">
+      <div class="inner">
+        <div class="top">
+          <h1 class="top__title">アカウント作成</h1>
+          <div class="top__socialButton">
+            <a class="facebook flex-half button">Facebookでスタート</a>
+            <a class="google flex-half button">Googleでスタート</a>
+          </div>
+          <p class="top__message">タイムラインへ投稿を行うことや、アカウント情報を伝えることはありません。</p>
+        </div>
+        <form id="form">
+          <div class="form__contentsDevide is-marginTop is-fullWidth"><p class="form__contentsDevide__text">アカウント情報</p></div>
+          <div class="form__name is-marginTop">
+            <div class="form__name__box">
+              <p class="labelText">名字 <span class="markColor">※</span></p>
+              <input type="text" class="is-fullWidth">
+            </div>
+            <div class="form__name__box">
+              <p class="labelText">名前 <span class="markColor">※</span></p>
+              <input type="text" class="is-fullWidth">
+            </div>
+          </div>
+          <div class="form__gender is-marginTop">
+            <p class="labelText">性別</p>
+            <div class="form__gender__select">
+              <label class="form__gender__content"><input type="radio" name="gender" value="男性"><span>男性</span></label>
+              <label class="form__gender__content"><input type="radio" name="gender" value="女性"><span>女性</span></label>
+              <label class="form__gender__content"><input type="radio" name="gender" value="その他"><span>その他</span></label>
+            </div>
+          </div>
+          <div class="form__region is-marginTop">
+            <p class="labelText">出身</p>
+            <div class="form__region__area is-fullWidth">
+              <select>
+                <option value="tokyo">東京</option>
+                <option value="chiba">千葉</option>
+                <option value="saitama">埼玉</option>
+                <option value="kanagawa">神奈川</option>
+              </select>
+            </div>
+          </div>
+          <div class="form__email is-marginTop">
+            <p class="labelText">Eメール <span class="markColor">※</span></p>
+            <input type="email" class="is-fullWidth" placeholder="ex) hoge@example.com">
+          </div>
+          <div class="form__phone is-marginTop">
+            <p class="labelText">電話番号</p>
+            <input type="tel" class="is-fullWidth" placeholder="ex) 09012345678">
+          </div>
+          <div class="form__pw is-marginTop">
+            <p class="labelText">パスワード <span class="markColor">※</span></p>
+            <input type="password" class="is-fullWidth">
+          </div>
+          <div class="form__pw is-marginTop">
+            <p class="labelText">パスワード(確認用)<span class="markColor"> ※</span></p>
+            <input type="password" class="is-fullWidth">
+          </div>
+          <div class="form__courses is-marginTop">
+            <p class="labelText">希望コース</p>
+            <div class="form__courses__option">
+              <input type="checkbox" id="frontend"><label for="frontend" class="form__courses__label">フロントエンド</label>
+            </div>
+            <div class="form__courses__option">
+              <input type="checkbox" id="backend"><label for="backend" class="form__courses__label">バックエンド</label>
+            </div>
+            <div class="form__courses__option">
+              <input type="checkbox" id="app"><label for="app" class="form__courses__label">アプリ</label>
+            </div>
+          </div>
+          <div class="form__notes is-marginTop">
+            <p class="labelText">備考</p>
+            <textarea class="is-fullWidth" name="notes" id="" cols="30" rows="10" placeholder="何かあればご記入ください"></textarea>
+          </div>
+          <div class="form__button is-marginTop">
+            <input type="submit" value="アカウント作成" class="sendButton button is-fullWidth">
+          </div>
+          <div class="form__message is-marginTop">
+            <p>アカウントを作成することにより、<a class="linkColor">利用規約</a>と<a class="linkColor">プライバシーポリシー</a>に同意するものとします。</p>
+          </div>
+        </form> 
+      </div>
+      <div class="foot">
+        <p>すでにアカウントをお持ちですか？ <a href="#" class="linkColor">ログイン</a></p>
+        <p><a href="#" class="linkColor">認証メールが届きませんか？</a></p>
+      </div>
+    </div>      
   </body>
 </html>
