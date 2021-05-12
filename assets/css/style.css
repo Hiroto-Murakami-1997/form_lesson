@@ -15,11 +15,27 @@
   width: 640px;
   box-sizing: border-box;
   border-radius: 3px;
-  box-shadow: 0 0 8px #d9d9d9;
+  box-shadow: 0 0 4px 0 rgb(0 0 0 / 18%);
 }
 
-input, 
-textarea,
+.input__generalSettings,
+.textarea__generalSettings {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  border: 1px solid #d9d9d9;
+  border-radius: 3px;
+  background-color: #fbfbfb;
+  color: #545658;
+  padding: 5px;
+  margin-top: 5px;
+  box-sizing: border-box;
+  height: 36px;
+  font-size: 13px;
+  line-height: 2;
+}
+ 
 select {
 	-webkit-appearance: none;
   -moz-appearance: none;
@@ -33,6 +49,7 @@ select {
   margin-top: 5px;
   box-sizing: border-box;
   height: 36px;
+  line-height: 2;
 }
 
 textarea {
@@ -136,16 +153,6 @@ textarea:focus {
   text-align: center;
 }
 
-.form__contentsDevide::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  height: 1px;
-  background-color: #ececec;
-}
-
 .form__contentsDevide__text {
   display: inline-block;
   color: #949697;
@@ -154,6 +161,18 @@ textarea:focus {
   background-color: #fff;
   padding: 0 10px;
 }
+
+.form__contentsDevide::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 1px;
+  width: 100%;
+  background-color: #ececec;
+}
+
 /* form__name */
 
 .form__name {
@@ -181,6 +200,7 @@ textarea:focus {
 .form__gender__content {
   margin-left: 15px;
   cursor: pointer;
+  color: #545658;
 }
 
 .form__gender__content:first-child {
@@ -205,8 +225,8 @@ textarea:focus {
 .form__gender__select span::before {
   content: '';
   display: block;
-  height: 13px;
-  width: 13px;
+  height: 14px;
+  width: 14px;
   border: 1px solid #d9d9d9;
   border-radius: 50px;
   position: absolute;
@@ -255,12 +275,12 @@ span::after {
 
 /* form__email */
 .form__email input::placeholder {
-  color: #949697;
+  color: #545658;
 }
 
 /* form__phone */
 .form__phone input::placeholder {
-  color: #949697;
+  color:#545658;
 }
 
 /* form__courses */
@@ -273,15 +293,16 @@ span::after {
   position: relative;
   margin-top: 10px;
   padding-left: 25px;
+  color: #545658;
+}
+
+.form__courses__option:first-of-type {
+  margin-top: 5px;
 }
 
 .form__courses label {
   color:#545658;
   cursor: default;
-}
-
-.form__courses__option:first-child {
-  margin-top: 5px;
 }
 
 .form__courses__option label::before {
@@ -307,7 +328,17 @@ span::after {
   transform: rotate(-45deg);
 }
 
+/* form__message */
+
+.form__message p {
+  line-height: 16px;
+}
+
 /* textarea */
+
+.form__notes textarea {
+  height: 100px;
+}
 
 .form__notes textarea::placeholder {
   color: #949697;
@@ -318,8 +349,8 @@ span::after {
 .sendButton {
   color: #fff;
   background-color: #01bfbd;
-  border: 1px solid #01bfbd;
   margin-top: 0;
+  border: none;
 }
 
 .sendButton:hover {
@@ -330,7 +361,6 @@ span::after {
   color: #01bfbd;
   background-color: #fff;
   border-color:#d9d9d9;
-  line-height: 0;
 }
 
 /* form__message */
@@ -343,11 +373,21 @@ span::after {
 .foot {
   text-align: center;
   font-size: 12px;
-  margin-top: 40px;
+  padding-top: 31dpx;
+  padding-bottom: 8px;
 }
 
-.foot p:last-child {
+.foot__message {
+  line-height: 18px;
+}
+
+.foot__mailCheck {
   display: inline-block;
-  margin-top: 10px;
+  margin-top: 8px;
+  line-height: 16px;
+}
+
+.foot__link__isHover:hover {
+  border-bottom: 1px solid #01a6a4;
 }
 
