@@ -20,30 +20,39 @@
           </div>
           <p class="top__message">タイムラインへ投稿を行うことや、アカウント情報を伝えることはありません。</p>
         </div>
-        <form id="form">
+        <form action="#" method="POST" name="createAccount">
           <div class="form__contentsDevide is-marginTop is-fullWidth"><p class="form__contentsDevide__text">アカウント情報</p></div>
           <div class="form__name is-marginTop">
             <div class="form__name__box">
               <p class="labelText">名字 <span class="markColor">※</span></p>
-              <input type="text" class="input__generalSettings is-fullWidth" required>
+              <input type="text" class="input__generalSettings is-fullWidth" name="familyName" required>
             </div>
             <div class="form__name__box">
               <p class="labelText">名前 <span class="markColor">※</span></p>
-              <input type="text" class="input__generalSettings is-fullWidth" required>
+              <input type="text" class="input__generalSettings is-fullWidth" name="firstName" required>
             </div>
           </div>
           <div class="form__gender is-marginTop">
             <p class="labelText">性別</p>
             <div class="form__gender__select is-fullWidth">
-              <label class="form__gender__content"><input type="radio" name="gender" value="男性"><span>男性</span></label>
-              <label class="form__gender__content"><input type="radio" name="gender" value="女性"><span>女性</span></label>
-              <label class="form__gender__content"><input type="radio" name="gender" value="その他"><span>その他</span></label>
+              <label class="form__gender__content">
+                <input type="radio" name="gender" value="男性">
+                <span>男性</span>
+              </label>
+              <label class="form__gender__content">
+                <input type="radio" name="gender" value="女性">
+                <span>女性</span>
+              </label>
+              <label class="form__gender__content">
+                <input type="radio" name="gender" value="その他">
+                <span>その他</span>
+              </label>
             </div>
           </div>
           <div class="form__region is-marginTop">
             <p class="labelText">出身</p>
             <div class="form__region__area">
-              <select class="is-fullWidth">
+              <select class="is-fullWidth" name="region" id="region">
                 <option value="tokyo">東京</option>
                 <option value="chiba">千葉</option>
                 <option value="saitama">埼玉</option>
@@ -53,30 +62,33 @@
           </div>
           <div class="form__email is-marginTop">
             <p class="labelText">Eメール <span class="markColor">※</span></p>
-            <input type="email" class="input__generalSettings is-fullWidth required" placeholder="ex) hoge@example.com">
+            <input type="email" class="input__generalSettings is-fullWidth required" name="email" placeholder="ex) hoge@example.com">
           </div>
           <div class="form__phone is-marginTop">
             <p class="labelText">電話番号</p>
-            <input type="tel" class="input__generalSettings is-fullWidth" placeholder="ex) 09012345678">
+            <input type="tel" class="input__generalSettings is-fullWidth" name="phoneNumber" placeholder="ex) 09012345678">
           </div>
           <div class="form__pw is-marginTop">
             <p class="labelText">パスワード <span class="markColor">※</span></p>
-            <input type="password" class="input__generalSettings is-fullWidth required">
+            <input type="password" class="input__generalSettings is-fullWidth required" name="password">
           </div>
           <div class="form__pw is-marginTop">
             <p class="labelText">パスワード(確認用)<span class="markColor"> ※</span></p>
-            <input type="password" class="input__generalSettings is-fullWidth required">
+            <input type="password" class="input__generalSettings is-fullWidth required" name="comfirmPassword">
           </div>
           <div class="form__courses is-marginTop">
             <p class="labelText">希望コース</p>
             <div class="form__courses__option">
-              <input type="checkbox" id="frontend" class="input__generalSettings"><label for="frontend" class="form__courses__label">フロントエンド</label>
+              <input type="checkbox" id="frontend" class="input__generalSettings" name="frontend">
+              <label for="frontend" class="form__courses__label">フロントエンド</label>
             </div>
             <div class="form__courses__option">
-              <input type="checkbox" id="backend" class="input__generalSettings"><label for="backend" class="form__courses__label">バックエンド</label>
+              <input type="checkbox" id="backend" class="input__generalSettings" name="backend">
+              <label for="backend" class="form__courses__label">バックエンド</label>
             </div>
             <div class="form__courses__option">
-              <input type="checkbox" id="app" class="input__generalSettings"><label for="app" class="form__courses__label">アプリ</label>
+              <input type="checkbox" id="app" class="input__generalSettings" name="app">
+              <label for="app" class="form__courses__label">アプリ</label>
             </div>
           </div>
           <div class="form__notes is-marginTop">

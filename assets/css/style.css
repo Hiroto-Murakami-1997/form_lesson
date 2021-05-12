@@ -19,7 +19,8 @@
 }
 
 .input__generalSettings,
-.textarea__generalSettings {
+.textarea__generalSettings,
+.form__region select {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -35,24 +36,8 @@
   font-size: 13px;
   line-height: 2;
 }
- 
-select {
-	-webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  outline: none;
-  border: 1px solid #d9d9d9;
-  border-radius: 3px;
-  background-color: #fbfbfb;
-  color: #545658;
-  padding: 5px;
-  margin-top: 5px;
-  box-sizing: border-box;
-  height: 36px;
-  line-height: 2;
-}
 
-textarea {
+.form__notes textarea {
   resize: none;
   height: 100px;
 }
@@ -250,7 +235,7 @@ span::after {
   left: 3.5px;
 }
 
-/* form__ragion */
+/* form__region */
 
 .form__region {
   width: 50%;
@@ -373,7 +358,7 @@ span::after {
 .foot {
   text-align: center;
   font-size: 12px;
-  padding-top: 31dpx;
+  padding-top: 31px;
   padding-bottom: 8px;
 }
 
